@@ -1,0 +1,25 @@
+{
+  "name":"dir-routes",
+  "version": "1.0.0",
+  "description": "Simple in string variable replacement.",
+  "keywords": [
+    "express",
+    "routes",
+    "dir",
+    "directory",
+    "folder",
+    "structure"
+  ],
+  "author": {
+    "name": "Daniel Sunami",
+    "email": "danielsunami@akafrx.com",
+    "url": "http://akafrx.com"
+  },
+  "homepage": "https://github.com/DanielSunami/dir-routes",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/DanielSunami/dir-routes.git"
+  },
+  "main": "./dir-routes.js",
+  "license":"MIT"
+}
