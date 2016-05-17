@@ -1,5 +1,5 @@
 {
-  "name":"dir-routes",
+  "name": "dir-routes",
   "version": "1.0.0",
   "description": "Simple in string variable replacement.",
   "keywords": [
@@ -10,16 +10,18 @@
     "folder",
     "structure"
   ],
-  "author": {
-    "name": "Daniel Sunami",
-    "email": "danielsunami@akafrx.com",
-    "url": "http://akafrx.com"
-  },
+  "author": "Daniel Sunami <danielsunami@akafrx.com> (http://akafrx.com)",
   "homepage": "https://github.com/DanielSunami/dir-routes",
   "repository": {
     "type": "git",
     "url": "git://github.com/DanielSunami/dir-routes.git"
   },
-  "main": "./dir-routes.js",
-  "license":"MIT"
+  "main": "./index.js",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/DanielSunami/dir-routes/issues"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
 }
