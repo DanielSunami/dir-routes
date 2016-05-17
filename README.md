@@ -61,7 +61,7 @@ httpServer.listen(8080, function() {
 ### Folder Structure
 ```
 -| node_modules
--| Routes
+-| routes
  | -| @param
  |  | -| something
  |  |  | -| get.js
