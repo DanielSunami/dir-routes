@@ -1,7 +1,7 @@
 {
   "name": "dir-routes",
   "version": "1.0.0",
-  "description": "Simple in string variable replacement.",
+  "description": "Use your directory structure as routes",
   "keywords": [
     "express",
     "routes",
