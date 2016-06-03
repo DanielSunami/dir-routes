@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	<title>Daniel Sunami</title>
+
+	<link rel="stylesheet" href="/style/font.css" />
+	<link rel="stylesheet" href="/style/main.css" />
+
+	<link href="https://plus.google.com/+DanielSunami" rel="publisher" />
+	<meta name="description" content="About @DanielSunami" />
+	<meta name="keywords" content="HTML,CSS,JavaScript,Destiny,Java,GitHub,DanielSunami" />
+	<meta name="author" content="DanielSunami" />
+</head>
+
+<body>
+	<div class="content">
+		<div class="block">
+			<h1>Enthusiast.</h1>
+			<h1>Practical.</h1>
+			<h1>Developer.</h1>
+		</div>
+		
+		<div class="letter block">
+			<p>Computer scientist, another one, there are plenty in the wild.<br/>
+			KISS adept, everything I do I try to keep it simple, maintainable, lightweight, scalable, easy to implement, stupid.</p>
+			<p>I'm not a framework guy, I don't like dependencies, I'm not into libraries, packages, plugins and etc. In my opinion you get lost and end up doing something without the real know-how, because it was in some dependency and now you need to understand and learn how to use a specific software.</p>
+		</div>
+
+		<div class="block">
+			<h2>Somethings I know a little bit about</h2>
+			<span class="tag">Java</span>
+			<span class="tag">Javascript</span>
+			<span class="tag">Node.JS</span>
+			<span class="tag">NonSQL</span>
+			<span class="tag">TV Shows</span>
+			<span class="tag">Movies</span>
+			<span class="tag">Music</span>
+			<span class="tag">Linux</span>
+			<span class="tag">HTML</span>
+			<span class="tag">CSS</span>
+			<span class="tag">RESTful</span>
+			<span class="tag" style="background-image:url(/image/exotic.png); background-size: cover; color: white;"><strong>D E S T I N Y</strong></span>
+		</div>
+		<div class="block">
+			<h2>NPM</h2>
+			dir-routes - Express routes as folders<br/>
+			var-parser - Simple in string variable replacement 
+		</div>
+		<div class="block">
+		<h2>Social</h2>
+			<div class="social">
+				<a href="http://stackoverflow.com/users/4788837/daniel-sunami"><img src="http://stackoverflow.com/users/flair/4788837.png" width="208" height="58" alt="Daniel's Stack Overflow profile" title="profile for Daniel Sunami at Stack Overflow, Q&amp;A for professional and enthusiast programmers"></a>
+				<a href="https://br.linkedin.com/pub/daniel-santana-sunami/49/909/728"><img src="/image/In-Black-59px-R.png" height="58" alt="Daniel's LinkedIn"></a>
+				<a href="https://plus.google.com/+DanielSunami" style="text-decoration: none;"><img src="https://ssl.gstatic.com/images/icons/gplus-64.png" alt="Daniel's Google+" height="58"></a>
+			</div>
+		</div>
+		<div class="quote block">
+			<span id="line">You cannot teach men anything, you can only help them discover it within themselves.</span>
+			— <span id="author">Galileo Galilei</span>
+		</div>
+	</div>
+	<script type="text/javascript">
+		!function(){
+			var arr = new Array();
+			arr.push({line:"Que Ninguém busca conciência e Todo Mundo dinheiro.",author: "Gil Vicente"});
+			arr.push({line:"Simplicity is the ultimate sophistication.",author: "Leonardo da Vinci"});
+			arr.push({line:"Time is a valuable thing watch it fly by as the pendulum swings.",author: "Linkin Park"});
+			arr.push({line:"No it isn't strange after changes upon changes we are more or less the same.",author: "Paul Simon"});
+			arr.push({line:"Some men just want to watch the world burn.",author: "Unkown"});
+			arr.push({line:"You cannot teach men anything, you can only help them discover it within themselves.",author: "Galileo Galilei"});
+			var random = localStorage ? (function(){
+				var prev = Math.round(Math.random()*(arr.length-1));
+				for(var a = 0; a < arr.length*3; a++) {
+					if(localStorage.getItem(prev) === null) {
+						localStorage.setItem(prev,"true");
+						return prev;
+					} else {
+						prev = Math.round(Math.random()*(arr.length-1));
+					}
+				}
+				localStorage.clear();
+				return prev;
+			})() : Math.round(Math.random()*(arr.length-1));
+			var b = arr[random];
+			document.getElementById("line").innerText = b.line;
+			document.getElementById("author").innerText = b.author;
+		}();
+	</script>
+</body>
+</html>

@@ -1,0 +1,61 @@
+body {
+	font-family: 'Roboto Slab';
+	margin: 0;
+	padding: 0;
+}
+
+.content {
+	max-width: 900px;
+	padding: 0 .2em;
+	margin: 0 auto;
+}
+
+.block {
+	margin-bottom: 3em;
+}
+
+.block > h1 {
+	font-size: 4em;
+	font-weight: 100;
+}
+
+.letter {
+	margin: 6em 0;
+}
+
+.quote {
+	display: block;
+	text-align: right;
+	font-style: italic;
+	font-size: 1.3em;
+}
+
+.quote #line {
+	font-size: 1.6em;
+	display: block;
+}
+
+.quote #author {
+	font-size: 1.3em;
+}
+
+.tag {
+	display: inline-block;
+	background-color: #F6F8FA;
+	padding: .7em 2em;
+	margin-bottom: .5em;
+	margin-right: .5em;
+}
+
+.social > a{
+	margin-right: .4em;
+}
+
+.foot {
+	margin-bottom: 0;
+	padding-bottom: 0;
+	font-size: .7em;
+	margin: 0 auto;
+	max-width: 120px;
+	font-family: 'Roboto Slab Light';
+}
