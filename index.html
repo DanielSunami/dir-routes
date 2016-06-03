@@ -8,19 +8,60 @@
 
 	<link rel="stylesheet" href="/style/font.css" />
 	<link rel="stylesheet" href="/style/main.css" />
+	<link rel="stylesheet" href="/style/prism.css" />
 
 	<link href="https://plus.google.com/+DanielSunami" rel="publisher" />
-	<meta name="description" content="Home site for npm package dir-routes" />
+	<meta name="description" content="Easiest way to organize and structure your expressjs routes" />
 	<meta name="keywords" content="HTML,CSS,JavaScript,ExpressJS,routes,GitHub,DanielSunami" />
 	<meta name="author" content="DanielSunami" />
 </head>
 
 <body>
 	<div class="content">
-		
-		
-		
+		<header class="block">
+			<h1>dir-routes</h1>
+		</header>
+		<div class="block">
+			<h2 class="light-text"><span>No configuration file.<br/>Maintainable.</span>
+			<span>Intuitive.<br/>Simple.</span>
+			First to adopt this approach to routes.</h2>
+			<p>Use your folder structure as routes, it uses the path as route and filename as HTTP method. Consider the following project folder:</p>
+
+			<pre><code class="language-none">-| node_modules
+-| routes
+ | -| new
+ |  | -| @id
+ |  |  | -| post.js
+ | -| get.js
+-| app.js</code></pre>
+			<p>Inside the <strong>routes</strong> folder we have two files: <strong>/new/@id/post.js</strong> and <strong>/get.js</strong>; now lets take a look at each one of them.<br/><h3>/get.js</h3></p>
+			<pre><code class="language-js">module.exports = function(req,res){
+	res.send('hello world!');
+}</code></pre>
+			<p>Finally lets see the application entry point, app.js:</p>
+			<pre><code class="language-js">var express = require('express'),
+	http = require('http'),
+	app = express(),
+	router = require('dir-routes');
+
+app.use(router);
+
+app.use(function(req, res) {
+	res.status(404).end('404: Page not Found');
+});
+
+var httpServer = http.createServer(app);
+
+httpServer.listen(8080, function() {
+	console.log('Listening on port %d', httpServer.address().port);
+});</code></pre>
+		</div>
+		<div class="block">
+			<h2>Get it!</h2>
+			<h3 class="light-text">npm install dir-routes</h3>
+		</div>
 	</div>
+	<script src="/lib/prism.js"></script>
 	<script type="text/javascript">
 		
 	</script>
