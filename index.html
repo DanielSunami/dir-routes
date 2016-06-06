@@ -50,7 +50,7 @@ http = require('http'),
 app = express(),
 router = require('dir-routes');
 
-app.use(router);
+app.use(router); // <- dir-routes exports a Express Router object, just use it
 
 app.use(function(req, res) {
 	res.status(404).end('404: Page not Found');
@@ -63,8 +63,19 @@ httpServer.listen(8080, function() {
 });</code></pre>
 		</div>
 		<div class="block">
+			<h2>Example</h2>
+			<p>A simple registration and login application, built only with express, dir-routes and 3 routes.<br/>
+			<a href="https://github.com/DanielSunami/dir-routes/raw/gh-pages/example.zip">Download!</a></p>
+			After downloaded extract the folder and execute with:
+			<pre><code class="language-none">node example</code></pre>
+		</div>
+		<div class="block">
 			<h2>Get it!</h2>
 			<h3 class="light-text">npm install dir-routes</h3>
+		</div>
+		<div class="block">
+			<h2>License</h2>
+			<h3 class="light-text">MIT</h3>
 		</div>
 	</div>
 	<script src="lib/prism.js"></script>
