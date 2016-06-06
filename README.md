@@ -14,7 +14,7 @@ If you don't want to use this package you could simply use the index.js to `var 
 ### get.js
 ```javascript
 // your import
-var	mongoose = require('mongoose');
+var mongoose = require('mongoose');
 
 module.exports = function(req, res){
 	// your stuff
@@ -37,9 +37,9 @@ app.use(router);
 ### App File
 ```javascript
 var express = require('express'),
-	http = require('http'),
-	app = express(),
-	router = require('dir-routes');
+http = require('http'),
+app = express(),
+router = require('dir-routes');
 
 app.param('param', function(req, res, next){
 	next();
@@ -91,9 +91,9 @@ GET  /new/
 
 ```javascript
 var express = require('express'),
-	http = require('http'),
-	app = express(),
-	router = require('dir-routes');
+http = require('http'),
+app = express(),
+router = require('dir-routes');
 
 app.param('param', function(req, res, next){
 	next();
