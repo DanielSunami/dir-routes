@@ -21,6 +21,9 @@
   "bugs": {
     "url": "https://github.com/DanielSunami/dir-routes/issues"
   },
+  "devDependencies": {
+    "express": ">=4.13.4"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   }
