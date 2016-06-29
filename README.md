@@ -6,7 +6,7 @@ This package creates a folder named "routes" in the base directory of your appli
 
 If you don't want to use this package you could simply use the index.js to `var router = require(./your-routes-folder)`.
 
-#### Windows doesn't allow `:` in folder's name, use `@` it will be replaced by `:`
+ Windows doesn't allow `:` in folder's name, use `@` it will be replaced by `:`
 
 
 ## How the files should be
