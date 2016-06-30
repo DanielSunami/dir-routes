@@ -8,7 +8,9 @@
     "dir",
     "directory",
     "folder",
-    "structure"
+    "structure",
+    "routing",
+    "paths"
   ],
   "author": "Daniel Sunami <danielsunami@akafrx.com> (http://akafrx.com)",
   "homepage": "https://github.com/DanielSunami/dir-routes",
