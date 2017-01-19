@@ -15,26 +15,24 @@
 	<meta name="description" content="Easiest way to organize and structure your expressjs routes" />
 	<meta name="keywords" content="HTML,CSS,JavaScript,ExpressJS,routes,GitHub,DanielSunami" />
 	<meta name="author" content="DanielSunami" />
-	<script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');ga('create', 'UA-90569111-1', 'auto');ga('send', 'pageview');</script>
+	<script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');ga('create', 'UA-90569111-2', 'auto');ga('send', 'pageview');</script>
 </head>
-
 <body>
 	<div class="content">
 		<header class="block">
-			<h1>dir-routes</h1>Why use it.
+			<h1>dir-routes</h1>
 		</header>
 		<div class="block">
-			<h2 class="light-text"><span>No configuration file.<br/>Maintainable.</span>
-			<span>Intuitive.<br/>Simple.</span></h2>
+			<h2 class="light-text">Why use it.</h2>
 			
 			<p>
-				Imagine multiple developers commiting code to the same branch, doing multiple stuff without conflicting.<br/>
-
+				There are many known methods to route your application, the most used ones are: mapping json files, writing one js file with all your routes and mount express routers on express routers. All these approuches involves writing more than one route to a single file and it can get a little bit confunsing on big projects.
+				With dir-routes you have at least one file for each endpoint and that makes it possible to <b>multiple developers commit code to the same branch without conflicting</b>.<br/>
 
 				<pre><code class="language-none">POST /article/new/ - creates a new article
-				GET /article/:id/ - get all data on article with given id
-				PUT /article/:id/ - alter data on article with given id
-				DELETE /article/:id/ - delete article with given id</code></pre>
+GET /article/:id/ - get all data on article with given id
+PUT /article/:id/ - alter data on article with given id
+DELETE /article/:id/ - delete article with given id</code></pre>
 
 				<pre><code class="language-none">-| routes
  | -| article
@@ -47,6 +45,6 @@
 			</p>
 		</div>
 
-	<script src="lib/prism.js"></script>
+	<script src="/dir-routes/lib/prism.js"></script>
 </body>
 </html>
