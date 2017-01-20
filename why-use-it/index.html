@@ -27,8 +27,12 @@
 			
 			<p>
 				There are many known methods to route your application, the most used ones are: mapping json files, writing one js file with all your routes and mount express routers on express routers. All these approuches involves writing more than one route to a single file and it can get a little bit confunsing on big projects.
-				With dir-routes you have at least one file for each endpoint and that makes it possible to <b>multiple developers commit code to the same branch without conflicting</b>.<br/>
+			</p>
+			<p>
+				With dir-routes you have at least one file for each endpoint and that makes it possible to <b>multiple developers coding one sprint to the same branch without conflicting</b>. Let's see an example:
 
+				We have a four developers team and one sprint wich consists of writing four endpoints, now we assign one endpoint to each dev as one endpoint has his own file there'll be no conflicts.
+				
 				<pre><code class="language-none">POST /article/new/ - creates a new article
 GET /article/:id/ - get all data on article with given id
 PUT /article/:id/ - alter data on article with given id
