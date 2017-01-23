@@ -57,7 +57,7 @@ p {
 	width: 50%;
 }
 
-@media (min-width: 40em) {
+@media (max-width: 40em) {
 	.flex {
 		flex-direction: column;
 	}
