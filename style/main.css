@@ -54,12 +54,15 @@ p {
 
 .flex > div {
 	flex: 1 1 auto;
-	transition: width 0.7s ease-out;
 	width: 50%;
 }
 
-@media all (min-width 40em) {
+@media (min-width: 40em) {
 	.flex {
 		flex-direction: column;
+	}
+
+	.flex > div {
+		width: 100%;
 	}
 }
