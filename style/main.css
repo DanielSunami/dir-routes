@@ -49,19 +49,11 @@ p {
 }
 
 .flex {
-	/* basic styling */
-	width: 350px;
-	height: 200px;
-	border: 1px solid #555;
-	font: 14px Arial;
-
-	/* flexbox setup */
 	display: flex;
 	flex-direction: column;
 }
 
 .flex > div {
 	flex: 1 1 auto;
-	width: 30px;
 	transition: width 0.7s ease-out;
 }
