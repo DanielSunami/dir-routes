@@ -11,7 +11,7 @@ p {
 
 .content {
 	max-width: 900px;
-	padding: 0 .2em;
+	padding: 0 2em;
 	margin: 0 auto;
 }
 
@@ -50,10 +50,15 @@ p {
 
 .flex {
 	display: flex;
-	flex-direction: column;
 }
 
 .flex > div {
 	flex: 1 1 auto;
 	transition: width 0.7s ease-out;
+}
+
+@media all (max-width: 545px) {
+	.flex {
+		flex-direction: column;
+	}
 }
