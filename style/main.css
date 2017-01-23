@@ -5,6 +5,10 @@ body {
 	font-size: 16px;
 }
 
+p {
+	text-align: justify;
+}
+
 .content {
 	max-width: 900px;
 	padding: 0 .2em;
@@ -42,4 +46,22 @@ body {
 	margin: 0 auto;
 	max-width: 120px;
 	font-family: 'Roboto Slab Light';
+}
+
+.flex {
+	/* basic styling */
+	width: 350px;
+	height: 200px;
+	border: 1px solid #555;
+	font: 14px Arial;
+
+	/* flexbox setup */
+	display: flex;
+	flex-direction: column;
+}
+
+.flex > div {
+	flex: 1 1 auto;
+	width: 30px;
+	transition: width 0.7s ease-out;
 }
