@@ -26,26 +26,38 @@
 			<h2 class="light-text">Why use it.</h2>
 			
 			<p>
-				There are many known methods to route your application, the most used ones are: mapping json files, writing one js file with all your routes and mount express routers on express routers. All these approuches involves writing more than one route to a single file and it can get a little bit confunsing on big projects.
+				There are many known methods to route your application, the most used ones are: mapping json files, writing one js file with all your routes and mounting express routers on express routers. All these approuches involves writing more than one route to a single file and it can get a little bit confunsed in big projects.
 			</p>
 			<p>
-				With dir-routes you have at least one file for each endpoint and that makes it possible to <b>multiple developers coding one sprint to the same branch without conflicting</b>. Let's see an example:
+				With dir-routes you have one file per endpoint and that makes it possible to <b>multiple developers code one sprint to the same branch without conflicting</b>. Let's see an example.
+				<br/>
+				We have a four developers team and one sprint wich consists of writing four endpoints. Our team:
 
-				We have a four developers team and one sprint wich consists of writing four endpoints, now we assign one endpoint to each dev as one endpoint has his own file there'll be no conflicts.
-				
-				<pre><code class="language-none">POST /article/new/ - creates a new article
+				<pre><code class="language-none">@alan
+@noam
+@brendan
+@dennis</code></pre>
+
+				REST API description:				
+				<pre><code class="language-none">POST /article/ - creates a new article
 GET /article/:id/ - get all data on article with given id
 PUT /article/:id/ - alter data on article with given id
 DELETE /article/:id/ - delete article with given id</code></pre>
 
+				Files:
 				<pre><code class="language-none">-| routes
  | -| article
- |  | -| new
- |  |  | -| post.js
  |  | -| @id
  |  |  | -| get.js
  |  |  | -| put.js
- |  |  | -| delete.js</code></pre>
+ |  |  | -| delete.js
+ |  | -| post.js</code></pre>
+
+				Assignment:
+				<pre><code class="language-none">/project/routes/article/post.js - @alan
+/project/routes/article/@id/get.js - @noam
+/project/routes/article/@id/put.js - @brendan
+/project/routes/article/@id/delete.js - @dennis</code></pre>
 			</p>
 		</div>
 
