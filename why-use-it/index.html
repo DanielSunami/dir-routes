@@ -29,7 +29,7 @@
 				There are many known methods to route your application, the most used ones are: mapping json files, writing one js file with all your routes and mounting express routers on express routers. All these approuches involves writing more than one route to a single file and it can get a little bit confunsed in big projects.
 			</p>
 			<p>
-				With dir-routes you have one file per endpoint and that makes it possible to <b>multiple developers code one sprint to the same branch without conflicting</b>. Let's see an example.
+				With dir-routes you have one file per endpoint and that makes it possible to <b>multiple developers coding to the same branch without conflicting</b>. Let's see an example.
 				<br/>
 				We have a four developers team and one sprint wich consists of writing four endpoints. Our team:
 
@@ -38,13 +38,13 @@
 @brendan
 @dennis</code></pre>
 
-				REST API description:				
+				REST API description:
 				<pre><code class="language-none">POST /article/ - creates a new article
 GET /article/:id/ - get all data on article with given id
 PUT /article/:id/ - alter data on article with given id
 DELETE /article/:id/ - delete article with given id</code></pre>
 
-				Files:
+				Directory structure:
 				<pre><code class="language-none">-| routes
  | -| article
  |  | -| @id
@@ -58,7 +58,10 @@ DELETE /article/:id/ - delete article with given id</code></pre>
 /project/routes/article/@id/get.js - @noam
 /project/routes/article/@id/put.js - @brendan
 /project/routes/article/@id/delete.js - @dennis</code></pre>
+
+				They all will commit to the same branch and there will be no conflicting problems nor the need of merging.
 			</p>
+			<p>Because it is very <b>intuitive</b> you will always know where the problem is when testing an endpoint. If "PUT /article/:id/" isn't working the way it should just take a look at "/project/routes/article/@id/put.js". There's no need to understand the whole project to start working on it and this package adds no learning curve therefore is not a prerequisite.</p>
 		</div>
 
 	<script src="/dir-routes/lib/prism.js"></script>
