@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.org/DanielSunami/dir-routes.svg?branch=master)](https://travis-ci.org/DanielSunami/dir-routes)
 
-Build your routes like in old fashioned way to deliver resources through HTTP. It's pretty much a concept than a package, think on the file path as a route and the file name as a HTTP method.
+Build your routes like in old fashioned way to deliver resources through HTTP. It's pretty much a concept than a package, think on the file path as a route and the file name as a HTTP method. Take a look [here to see why use it](http://danielsunami.github.io/dir-routes/why-use-it/).
 
 ## What it does?
 This package creates a folder named "routes" in the base directory of your application, then puts a 'Hello World!' example and an index.js file inside it, if there was already a folder named "routes" it just creates the index.js file. The real magic happens inside the routes folder, the index file iterates through all directories and subdirectories mapping all paths and files to an express router.
@@ -11,9 +11,9 @@ If you don't want to use this package you could simply use the index.js to `var 
 
 **It supports [route parameters](http://expressjs.com/en/guide/routing.html#route-parameters) but Windows doesn't allow `:` in folder's name, use `@` instead**
 
-**RegExp aren't supported yet**
+**RegExp aren't supported**
 
-## How the files should be
+## How files should be
 
 ### get.js
 ```javascript
