@@ -9,6 +9,11 @@ p {
 	text-align: justify;
 }
 
+h1 {
+	font-size: 4em;
+	font-weight: 100;
+}
+
 .content {
 	max-width: 900px;
 	padding: 0 2em;
@@ -25,19 +30,12 @@ p {
 	margin-bottom: 1.4em;
 }
 
-.block > .light-text > span {
-	display: table-cell;
+.header-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    width: 100%;
 }
-
-.block > .light-text > span ~ span{
-	padding-left: 1em;
-}
-
-.block > h1 {
-	font-size: 4em;
-	font-weight: 100;
-}
-
 
 .foot {
 	margin-bottom: 0;
