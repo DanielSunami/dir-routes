@@ -37,6 +37,10 @@ h1 {
     width: 100%;
 }
 
+.header-item {
+	align-self: flex-end;
+}
+
 .foot {
 	margin-bottom: 0;
 	padding-bottom: 0;
@@ -61,6 +65,14 @@ h1 {
 	}
 
 	.flex > div {
+		width: 100%;
+	}
+
+	.flex .header-item {
+		align-self: initial;
+	}
+
+	.flex .header-link {
 		width: 100%;
 	}
 }
