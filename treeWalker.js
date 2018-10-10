@@ -7,7 +7,7 @@ var path = require('path'),
 function req(method, path, file) {
 	var handler = require(file);
 	path = path.replace(/@/g,':');
-	log += util.format('Mapping %s %s to %s \n', method.toUpperCase(), path.substring(__dirname.length, path.length), file);
+	log += util.format('Mapping %s %s to %s \\n', method.toUpperCase(), path.substring(__dirname.length, path.length), file);
 	router[method](path.substring(__dirname.length, path.length), handler);
 }
 
