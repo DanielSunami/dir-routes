@@ -154,4 +154,8 @@ var router = require('dir-routes');
 console.log(router.log);
 ```
 
+## Sponsors
+
+[![Logo Dokoro](https://dokoro.com.br/assets/img/logo-color.png "Logo Dokoro")](https://dokoro.com.br/)
+
 Inspired by [@olado's](https://github.com/olado) doT.js express [example](https://github.com/olado/doT/blob/master/examples/express/lib/render/index.js).
